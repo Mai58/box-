@@ -1,0 +1,67 @@
+.kutu{
+    position: relative;
+margin-top: 100px;
+margin-left: 100px;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 4px 36px 9px rgba(247, 13, 13, 0.84);
+border-radius: 0px;
+
+ display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.kutu1{
+    position: absolute;
+    background-color: blue;
+  height: 150px;
+    width: 150px;
+     display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: inset 0px 4px 36px 0px rgba(21, 21, 24, 0.912);
+border-radius: 0px;
+transition: transform 0.6s ease;
+    
+}
+
+.kutu2{
+    position: absolute;
+        display: flex;
+    justify-content: center;
+align-items: center;
+    background-color: plum;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+opacity: 0;
+
+}
+
+.kutu1:hover{
+    transform: scale(1.1) rotate(45deg);
+    background-color: red;
+}
+
+.kutu1:hover .kutu2{
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+ body{
+    display: flex;
+    justify-content: center;
+align-items: center;
+    height: 100vh;
+    margin: 0;
+ }
+
+ p{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+ }
+
+ 
